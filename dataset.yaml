@@ -1,0 +1,17 @@
+path: .
+train: images/train
+val: images/val
+
+task: segment
+nc: 10 
+names:
+  - resource_wood
+  - resource_food
+  - resource_gold
+  - resource_stone
+  - __unused__
+  - resource_population
+  - button_terrain
+  - button_views
+  - resource_idlevillagers
+  - minimap

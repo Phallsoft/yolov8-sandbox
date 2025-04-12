@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  yolov8:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Capitalize if your file is named "Dockerfile"
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true          # Allows interactive sessions (e.g., bash shell)
+    tty: true                 # Ensures terminal stays open
+    command: bash             # Default command when starting container
